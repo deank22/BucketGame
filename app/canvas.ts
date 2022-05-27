@@ -34,13 +34,15 @@ function animate () {
   ctx.fillStyle = "solid pink";
   ctx.fillText(`Score: ${score}`, 50, 50);
   //requestAnimationFrame(animate)
-  goldcoin.y += score;
+  let speed = score;
+  if (speed > 25){speed=25}
+  goldcoin.y += speed;
   if (goldcoin.y > canvas.height) {
    goldcoin.y = 0;
     goldcoin.x = Math.random()*420
   }
   if (goldcoin.y > greenbucket.y
-     && goldcoin.y < (greenbucket.y+score+1)     
+     && goldcoin.y < (greenbucket.y+speed+1)     
      ) {
     let distance = Math.abs(goldcoin.x-greenbucket.x);
     if (distance < 45){
