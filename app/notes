@@ -1,0 +1,8 @@
+game: thing at bottom that is moved with arrow keys and you have to move it side to side to cantch falling "points" like coins or something
+
+
+figure out what needs to come over from other hello world, what things need to be on screen like bucket, coins, make controls to make the arrow keys move the bucket, 
+
+create a score system where every coin collected is +1 point and every coin missed is -1 point
+
+type ?monaco=1 into the url before the #app to get the old editor back !
